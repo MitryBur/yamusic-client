@@ -11,6 +11,11 @@
 		483D94531A881FA400E4C0AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483D94521A881FA400E4C0AB /* Images.xcassets */; };
 		483D94561A881FA400E4C0AB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483D94541A881FA400E4C0AB /* MainMenu.xib */; };
 		483D94621A881FA400E4C0AB /* YaMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483D94611A881FA400E4C0AB /* YaMusicTests.swift */; };
+		483D946F1A88220F00E4C0AB /* MasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483D946D1A88220F00E4C0AB /* MasterController.swift */; };
+		483D94701A88220F00E4C0AB /* MasterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483D946E1A88220F00E4C0AB /* MasterController.xib */; };
+		483D94C21A892B9500E4C0AB /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 483D94C11A892B9500E4C0AB /* Carbon.framework */; };
+		483D94C41A892B9A00E4C0AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 483D94C31A892B9A00E4C0AB /* Cocoa.framework */; };
+		483D94C71A8961B600E4C0AB /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 483D94C61A8961B600E4C0AB /* home.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,11 @@
 		483D945B1A881FA400E4C0AB /* YaMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YaMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		483D94601A881FA400E4C0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		483D94611A881FA400E4C0AB /* YaMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YaMusicTests.swift; sourceTree = "<group>"; };
+		483D946D1A88220F00E4C0AB /* MasterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterController.swift; sourceTree = "<group>"; };
+		483D946E1A88220F00E4C0AB /* MasterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MasterController.xib; sourceTree = "<group>"; };
+		483D94C11A892B9500E4C0AB /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		483D94C31A892B9A00E4C0AB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		483D94C61A8961B600E4C0AB /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				483D94C41A892B9A00E4C0AB /* Cocoa.framework in Frameworks */,
+				483D94C21A892B9500E4C0AB /* Carbon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +70,7 @@
 				483D944D1A881FA400E4C0AB /* YaMusic */,
 				483D945E1A881FA400E4C0AB /* YaMusicTests */,
 				483D944C1A881FA400E4C0AB /* Products */,
+				483D94C51A8951BA00E4C0AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +90,9 @@
 				483D94521A881FA400E4C0AB /* Images.xcassets */,
 				483D94541A881FA400E4C0AB /* MainMenu.xib */,
 				483D944E1A881FA400E4C0AB /* Supporting Files */,
+				483D946D1A88220F00E4C0AB /* MasterController.swift */,
+				483D946E1A88220F00E4C0AB /* MasterController.xib */,
+				483D94C61A8961B600E4C0AB /* home.png */,
 			);
 			path = YaMusic;
 			sourceTree = "<group>";
@@ -104,6 +120,15 @@
 				483D94601A881FA400E4C0AB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		483D94C51A8951BA00E4C0AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				483D94C11A892B9500E4C0AB /* Carbon.framework */,
+				483D94C31A892B9A00E4C0AB /* Cocoa.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +194,7 @@
 			knownRegions = (
 				en,
 				Base,
+				English,
 			);
 			mainGroup = 483D94421A881FA400E4C0AB;
 			productRefGroup = 483D944C1A881FA400E4C0AB /* Products */;
@@ -186,6 +212,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				483D94701A88220F00E4C0AB /* MasterController.xib in Resources */,
+				483D94C71A8961B600E4C0AB /* home.png in Resources */,
 				483D94531A881FA400E4C0AB /* Images.xcassets in Resources */,
 				483D94561A881FA400E4C0AB /* MainMenu.xib in Resources */,
 			);
@@ -206,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				483D94511A881FA400E4C0AB /* AppDelegate.swift in Sources */,
+				483D946F1A88220F00E4C0AB /* MasterController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +348,7 @@
 		483D94661A881FA400E4C0AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcons;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = YaMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -330,7 +359,7 @@
 		483D94671A881FA400E4C0AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcons;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = YaMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

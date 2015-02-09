@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MasterController" customModule="YaMusic" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="USi-3L-FlM" id="IlT-lW-QNP"/>
+                <outlet property="forthButton" destination="GKA-50-SgT" id="VLI-TJ-IpY"/>
+                <outlet property="homeButton" destination="zTj-ip-eBo" id="ulf-Sa-e8l"/>
+                <outlet property="reloadButton" destination="BTM-8t-pvZ" id="iWi-RO-Sgu"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="yaWebView" destination="GB4-Tt-wNR" id="gb3-69-Crr"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="553" height="390"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <webView translatesAutoresizingMaskIntoConstraints="NO" id="GB4-Tt-wNR">
+                    <rect key="frame" x="0.0" y="0.0" width="553" height="390"/>
+                    <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12"/>
+                </webView>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="USi-3L-FlM">
+                    <rect key="frame" x="320" y="17" width="25" height="25"/>
+                    <buttonCell key="cell" type="roundTextured" title="&lt;" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="0ot-2b-Gev">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="goBack:" target="-2" id="qzR-F5-E49"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GKA-50-SgT">
+                    <rect key="frame" x="360" y="17" width="25" height="25"/>
+                    <buttonCell key="cell" type="roundTextured" title=">" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QH4-1D-2NJ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="goForth:" target="-2" id="3gP-H8-UXz"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BTM-8t-pvZ">
+                    <rect key="frame" x="280" y="17" width="25" height="25"/>
+                    <buttonCell key="cell" type="roundTextured" title="↻" bezelStyle="texturedRounded" alignment="center" borderStyle="border" inset="2" id="cf3-ug-pjj">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="reload:" target="-2" id="i9c-s2-JVz"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zTj-ip-eBo">
+                    <rect key="frame" x="240" y="17" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="YdZ-oV-jIQ"/>
+                    </constraints>
+                    <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="home" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyUpOrDown" inset="2" id="r17-eK-eWl">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="goHome:" target="-2" id="TnS-lc-fhN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="USi-3L-FlM" firstAttribute="baseline" secondItem="GKA-50-SgT" secondAttribute="baseline" id="1kX-kN-W95"/>
+                <constraint firstAttribute="bottom" secondItem="GB4-Tt-wNR" secondAttribute="bottom" id="3iz-Z2-Ywf"/>
+                <constraint firstItem="zTj-ip-eBo" firstAttribute="top" secondItem="BTM-8t-pvZ" secondAttribute="top" id="46r-hi-Rn5"/>
+                <constraint firstItem="BTM-8t-pvZ" firstAttribute="baseline" secondItem="USi-3L-FlM" secondAttribute="baseline" id="720-5A-I6d"/>
+                <constraint firstItem="USi-3L-FlM" firstAttribute="leading" secondItem="BTM-8t-pvZ" secondAttribute="trailing" constant="15" id="7t1-a2-ebK"/>
+                <constraint firstItem="BTM-8t-pvZ" firstAttribute="leading" secondItem="zTj-ip-eBo" secondAttribute="trailing" constant="15" id="8Uu-qL-1uj"/>
+                <constraint firstItem="GB4-Tt-wNR" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="8mF-Hi-PkP"/>
+                <constraint firstAttribute="trailing" secondItem="GB4-Tt-wNR" secondAttribute="trailing" id="MQ9-UV-G7M"/>
+                <constraint firstItem="GKA-50-SgT" firstAttribute="leading" secondItem="USi-3L-FlM" secondAttribute="trailing" constant="15" id="Qe2-JP-lbb"/>
+                <constraint firstAttribute="bottom" secondItem="USi-3L-FlM" secondAttribute="bottom" constant="19" id="Rve-J9-klC"/>
+                <constraint firstItem="GB4-Tt-wNR" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="a8U-J7-afa"/>
+                <constraint firstItem="USi-3L-FlM" firstAttribute="width" secondItem="GKA-50-SgT" secondAttribute="width" id="on2-T5-bet"/>
+                <constraint firstAttribute="trailing" secondItem="GKA-50-SgT" secondAttribute="trailing" constant="168" id="twg-1E-IrC"/>
+            </constraints>
+            <point key="canvasLocation" x="449.5" y="363"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="home" width="32" height="32"/>
+    </resources>
+</document>

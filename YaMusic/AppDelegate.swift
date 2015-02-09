@@ -12,14 +12,25 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
-
+    var masterVC:MasterController!
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        masterVC = MasterController(nibName:"MasterController", bundle:nil)
+        window.contentView.addSubview(masterVC.view)
+        
+        masterVC.view.translatesAutoresizingMaskIntoConstraints = false
+        let masterView = masterVC.view
+        let verticalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("V:|[masterView]|", options: nil, metrics: nil, views:["masterView":masterView])
+        let horizontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat("H:|[masterView]|", options: nil, metrics: nil, views:["masterView":masterView])
+        window.contentView.addConstraints(verticalConstraints)
+        window.contentView.addConstraints(horizontalConstraints)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let url = masterVC.currentURL()
+        defaults.setObject(url, forKey: "lastURL")
+        defaults.synchronize()
     }
 
 
