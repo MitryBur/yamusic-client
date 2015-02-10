@@ -14,6 +14,7 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="YaMusic" customModuleProvider="target">
             <connections>
+                <outlet property="statusMenu" destination="AzK-xc-GC5" id="WG2-9z-SoW"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -122,6 +123,41 @@
                 </menuItem>
             </items>
         </menu>
+        <menu title="Navi" id="AzK-xc-GC5">
+            <items>
+                <menuItem title="Go back" id="pg0-cS-bFS">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="goBackPressed:" target="Voe-Tx-rLC" id="qnF-YH-wU9"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Go forward" id="9ba-c1-1vl">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="goForthPressed:" target="Voe-Tx-rLC" id="KzU-Tc-gKR"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Reload" id="ZIn-9n-1x3">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="reloadPressed:" target="Voe-Tx-rLC" id="PMm-7j-65C"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Home" id="tSe-mu-P9K">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="goHomePressed:" target="Voe-Tx-rLC" id="pQl-tK-tph"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="yCL-dK-I1Q"/>
+                <menuItem title="Quit" id="gfu-mS-n00">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="terminate:" target="-1" id="0Fn-xX-RvB"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
         <window title="YaMusic" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <rect key="contentRect" x="0.0" y="0.0" width="1000" height="800"/>
@@ -133,18 +169,5 @@
             </view>
             <point key="canvasLocation" x="-205" y="-996"/>
         </window>
-        <menu id="oGY-Wu-FMl">
-            <items>
-                <menuItem title="Item 1" id="YGy-NH-To6">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Item 2" id="Pmz-9t-QrV">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-                <menuItem title="Item 3" id="A4w-hk-crf">
-                    <modifierMask key="keyEquivalentModifierMask"/>
-                </menuItem>
-            </items>
-        </menu>
     </objects>
 </document>

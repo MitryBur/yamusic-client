@@ -12,7 +12,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     var masterVC:MasterController!
+    var statusItem:NSStatusItem!
 
+    @IBOutlet weak var statusMenu: NSMenu!
     @IBAction func goBackPressed(sender: NSButton) {
         if masterVC.respondsToSelector(Selector("goBack:")){
             masterVC.goBack(sender)
@@ -45,7 +47,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.contentView.addConstraints(verticalConstraints)
         window.contentView.addConstraints(horizontalConstraints)
     }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-2)
+        statusItem.image = NSImage(named: "logobw")
+        //statusItem.alternateImage = NSImage(named: "logobw")
 
+        //statusItem.title = "YaMusic";
+        statusItem.menu = statusMenu;
+        statusItem.highlightMode = true;
+    }
     func applicationWillTerminate(aNotification: NSNotification) {
         let defaults = NSUserDefaults.standardUserDefaults()
         let url = masterVC.currentURL()

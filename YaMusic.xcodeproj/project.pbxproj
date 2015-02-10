@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48398C1A1A8A1F52001F6AD5 /* logobw.png in Resources */ = {isa = PBXBuildFile; fileRef = 48398C191A8A1F52001F6AD5 /* logobw.png */; };
 		483D94511A881FA400E4C0AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483D94501A881FA400E4C0AB /* AppDelegate.swift */; };
 		483D94531A881FA400E4C0AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 483D94521A881FA400E4C0AB /* Images.xcassets */; };
 		483D94561A881FA400E4C0AB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 483D94541A881FA400E4C0AB /* MainMenu.xib */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48398C191A8A1F52001F6AD5 /* logobw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logobw.png; path = Images/logobw.png; sourceTree = "<group>"; };
 		483D944B1A881FA400E4C0AB /* YaMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YaMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		483D944F1A881FA400E4C0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		483D94501A881FA400E4C0AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,7 +94,6 @@
 				483D944E1A881FA400E4C0AB /* Supporting Files */,
 				483D946D1A88220F00E4C0AB /* MasterController.swift */,
 				483D946E1A88220F00E4C0AB /* MasterController.xib */,
-				483D94C61A8961B600E4C0AB /* home.png */,
 			);
 			path = YaMusic;
 			sourceTree = "<group>";
@@ -100,7 +101,9 @@
 		483D944E1A881FA400E4C0AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				48398C191A8A1F52001F6AD5 /* logobw.png */,
 				483D944F1A881FA400E4C0AB /* Info.plist */,
+				483D94C61A8961B600E4C0AB /* home.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				483D94701A88220F00E4C0AB /* MasterController.xib in Resources */,
 				483D94C71A8961B600E4C0AB /* home.png in Resources */,
+				48398C1A1A8A1F52001F6AD5 /* logobw.png in Resources */,
 				483D94531A881FA400E4C0AB /* Images.xcassets in Resources */,
 				483D94561A881FA400E4C0AB /* MainMenu.xib in Resources */,
 			);
@@ -422,6 +426,7 @@
 				483D94671A881FA400E4C0AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		483D94681A881FA400E4C0AB /* Build configuration list for PBXNativeTarget "YaMusicTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +435,7 @@
 				483D946A1A881FA400E4C0AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
