@@ -15,6 +15,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem:NSStatusItem!
 
     @IBOutlet weak var statusMenu: NSMenu!
+    @IBAction func bringAppToFront(sender: NSMenuItem) {
+        NSApp.activateIgnoringOtherApps(true)
+    }
     @IBAction func goBackPressed(sender: NSButton) {
         if masterVC.respondsToSelector(Selector("goBack:")){
             masterVC.goBack(sender)
