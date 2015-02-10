@@ -35,14 +35,8 @@ class MasterController: NSViewController {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        yaWebView.wantsLayer = true
-        backButton.wantsLayer = true
-        forthButton.wantsLayer = true
-        reloadButton.wantsLayer = true
-        homeButton.wantsLayer = true
-        
         let defaults = NSUserDefaults.standardUserDefaults()
-        var rawURL: AnyObject? = defaults.objectForKey("lastURL")
+        let rawURL: AnyObject? = defaults.objectForKey("lastURL")
         var requestURL: NSURL
         if (rawURL == nil){
             requestURL = NSURL(string: yandexMusicURL)!
