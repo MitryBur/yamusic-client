@@ -64,6 +64,37 @@
                         </items>
                     </menu>
                 </menuItem>
+                <menuItem title="Navi" id="Jl3-Ld-1TZ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Navi" id="pRl-hg-tZa">
+                        <items>
+                            <menuItem title="Go back" id="hp2-p2-IkK">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="goBackPressed:" target="Voe-Tx-rLC" id="Mhd-TG-2sN"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Go forward" id="xVS-2b-LNx">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="goForthPressed:" target="Voe-Tx-rLC" id="XqA-zk-uJq"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Reload" id="ZxU-Id-JvD">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="reloadPressed:" target="Voe-Tx-rLC" id="Ngt-Zr-Xwq"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Home" id="5EF-bj-Ra1">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="goHomePressed:" target="Voe-Tx-rLC" id="h3W-dS-hHO"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
                 <menuItem title="Window" id="aUF-d1-5bR">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
@@ -102,5 +133,18 @@
             </view>
             <point key="canvasLocation" x="-205" y="-996"/>
         </window>
+        <menu id="oGY-Wu-FMl">
+            <items>
+                <menuItem title="Item 1" id="YGy-NH-To6">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Item 2" id="Pmz-9t-QrV">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem title="Item 3" id="A4w-hk-crf">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+            </items>
+        </menu>
     </objects>
 </document>

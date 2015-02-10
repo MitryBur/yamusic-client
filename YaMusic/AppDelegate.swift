@@ -10,9 +10,29 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
     @IBOutlet weak var window: NSWindow!
     var masterVC:MasterController!
+
+    @IBAction func goBackPressed(sender: NSButton) {
+        if masterVC.respondsToSelector(Selector("goBack:")){
+            masterVC.goBack(sender)
+        }
+    }
+    @IBAction func goForthPressed(sender: NSButton) {
+        if masterVC.respondsToSelector(Selector("goForth:")){
+            masterVC.goForth(sender)
+        }
+    }
+    @IBAction func reloadPressed(sender: NSButton) {
+        if masterVC.respondsToSelector(Selector("reload:")){
+            masterVC.reload(sender)
+        }
+    }
+    @IBAction func goHomePressed(sender: NSButton) {
+        if masterVC.respondsToSelector(Selector("goHome:")){
+            masterVC.goHome(sender)
+        }
+    }
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         masterVC = MasterController(nibName:"MasterController", bundle:nil)
